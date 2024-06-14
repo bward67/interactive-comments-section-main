@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive comments section</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main class="container">
+      <div class="main-comment-container first-container">
+        <div class="reply-comment">
+          <div class="score-container">
+            <img src="images/icon-plus.svg" alt="" class="plus" />
+            <div class="score">12</div>
+            <img src="images/icon-minus.svg" alt="" class="minus" />
+          </div>
+          <div class="avatar-container">
+            <img
+              src="images/avatars/image-amyrobson.webp"
+              alt=""
+              class="avatar"
+            />
+            <div class="avatar-name">amyrobson</div>
+            <div class="time-stamp">1 month ago</div>
+          </div>
+          <div class="reply-container">
+            <img src="images/icon-reply.svg" alt="" class="arrow" />
+            <p class="reply">Reply</p>
+          </div>
+          <div class="comment">
+            Impressive! Though it seems the drag feature could be improved. But
+            overall it looks incredible. You've nailed the design and the
+            responsiveness at various breakpoints works really well.
+          </div>
+        </div>
+      </div>
+
+      <div class="main-comment-container">
+        <div class="reply-comment">
+          <div class="score-container">
+            <img src="images/icon-plus.svg" alt="" class="plus" />
+            <div class="score">5</div>
+            <img src="images/icon-minus.svg" alt="" class="minus" />
+          </div>
+          <div class="avatar-container">
+            <img
+              src="images/avatars/image-maxblagun.png"
+              alt=""
+              class="avatar"
+            />
+            <div class="avatar-name">maxblagun</div>
+            <div class="time-stamp">2 weeks ago</div>
+          </div>
+          <div class="reply-container">
+            <img src="images/icon-reply.svg" alt="" class="arrow" />
+            <p class="reply">Reply</p>
+          </div>
+          <div class="comment">
+            Woah, your project looks awesome! How long have you been coding for?
+            I'm still new, but think I want to dive into React as well soon.
+            Perhaps you can give me an insight on where I can learn React?
+            Thanks!
+          </div>
+        </div>
+      </div>
+
+      <div class="reply-comment-container main-comment-container">
+        <div class="reply-comment">
+          <div class="score-container">
+            <img src="images/icon-plus.svg" alt="" class="plus" />
+            <div class="score">4</div>
+            <img src="images/icon-minus.svg" alt="" class="minus" />
+          </div>
+          <div class="avatar-container">
+            <img
+              src="images/avatars/image-ramsesmiron.png"
+              alt=""
+              class="avatar"
+            />
+            <div class="avatar-name">ramsesmiron</div>
+            <div class="time-stamp">1 week ago</div>
+          </div>
+          <div class="reply-container">
+            <img src="images/icon-reply.svg" alt="" class="arrow" />
+            <p class="reply">Reply</p>
+          </div>
+          <div class="comment">
+            <p>
+              <span class="at-title">@maxlagun </span>If you're still new, I'd
+              recommend focusing on the fundamentals of HTML, CSS, and JS before
+              considering React. It's very tempting to jump ahead but lay a
+              solid foundation first.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="user-comment-wrapper">
+        <div class="user-comment-with-update-btn">
+          <div class="user-comment">
+            <div class="score-container">
+              <img src="images/icon-plus.svg" alt="" class="plus" />
+              <div class="score">5</div>
+              <img src="images/icon-minus.svg" alt="" class="minus" />
+            </div>
+            <div class="user-avatar-container">
+              <img
+                src="images/avatars/image-juliusomo.png"
+                alt=""
+                class="avatar"
+              />
+              <div class="avatar-name">juliusomo</div>
+              <p class="you">you</p>
+              <div class="time-stamp">2 days ago</div>
+            </div>
+            <div class="btns-wrapper">
+              <div class="delete-edit-container">
+                <div class="delete-container">
+                  <img src="images/icon-delete.svg" alt="" class="arrow" />
+                  <p class="delete">Delete</p>
+                </div>
+                <div class="edit-container">
+                  <img src="images/icon-edit.svg" alt="" class="arrow" />
+                  <p class="edit">Edit</p>
+                </div>
+              </div>
+              <div class="reply-container">
+                <img src="images/icon-reply.svg" alt="" class="arrow" />
+                <p class="reply">Reply</p>
+              </div>
+            </div>
+
+            <div class="comment">
+              <p>
+                <span class="at-title">@ramsesmiron </span>I couldn't agree more
+                with this. Everything moves so fast and it always seems like
+                everyone knows the newest library/framework. But the
+                fundamentals are what stay constant."
+              </p>
+            </div>
+          </div>
+          <button class="blue-btn update-btn">Update</button>
+        </div>
+      </div>
+-->
+      <!--
+       <div class="add-comment-container">
+        <img
+          src="images/avatars/image-juliusomo.png"
+          alt=""
+          class="avatar add-comment-avatar"
+        />
+
+        <textarea
+          class="comment-input"
+          name=""
+          id="comment-input"
+          rows="3"
+          placeholder="Add a comment..."
+        ></textarea>
+
+        <button class="blue-btn send-btn">Send</button>
+      </div>
+      -->
+
+      <!--Modal-->
+      <div class="modal-container container">
+        <h1>Delete comment</h1>
+        <p>
+          Are you sure you want to delete this comment? This will remove the
+          comment and can't be undone.
+        </p>
+        <div class="cancel-delete-container">
+          <button class="no-cancel-btn">No, Cancel</button>
+          <button class="yes-delete-btn">Yes, Delete</button>
+        </div>
+      </div>
+    </main>
+    <!-- Pull dynamic content from the data.json file -->
+  </body>
+  <script src="app.js"></script>
+</html>
+
+<!--https://www.youtube.com/watch?v=2GjQzBWdDAc
+
+7:06 of 33:09-->
